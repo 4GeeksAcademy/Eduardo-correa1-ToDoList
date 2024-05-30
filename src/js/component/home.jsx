@@ -20,7 +20,7 @@ const Home = () => {
 				}} /></li>
 				{task.map((entrada, index) => <li key={index}><i onClick={()=>setTask(task.filter((entrada, currentIndex) => index != currentIndex))} className="fas fa-trash-alt"></i> {entrada}</li>)}
 			</ul>
-			<div className="text-start taskCounter"><p>{task.length}</p></div>
+			<div className="text-start taskCounter"><p>{task.length} tareas pendientes</p></div>
 			</div>
 			
 
